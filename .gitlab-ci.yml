@@ -1,0 +1,53 @@
+# pick a docker image
+# image: ubuntu:14.04
+image: ros:kinetic-perception
+
+stages:
+  - build
+  - test
+
+# just build don't run the tests
+build:
+  stage: build
+  before_script:
+  - apt-get update
+  - apt-get install -y git build-essential cmake qt5-default libopencv-dev libyaml-cpp-dev 
+
+  - git submodule update --init
+  - mkdir build
+  - cd build
+  script:
+  - cmake ..
+  - make -j4
+  tags:
+  - docker
+  except:
+  - tags
+  artifacts:
+    paths:
+      - ./
+
+test:
+  stage: test
+  before_script:
+  - apt-get update
+  - apt-get install -y cmake libopencv-dev libyaml-cpp-dev 
+  script:
+  - cd build
+  - ctest -VV
+  tags:
+  - docker
+  except:
+  - tags
+
+# documentation:
+#   stage: build
+#   before_script:
+#   - apt-get update
+#   - apt-get install -y doxygen graphviz
+#   script:
+#   - cd doc
+#   - doxygen *.conf
+#   artifacts:
+#     paths:
+#     - doc/html

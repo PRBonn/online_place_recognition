@@ -1,0 +1,5 @@
+--- 
+path2ref: ../../examples/data/bonn_example/reference/OverFeat_features/
+path2qu: ../../examples/data/bonn_example/query/OverFeat_features/
+querySize: 544
+

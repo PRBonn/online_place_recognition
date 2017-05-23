@@ -1,0 +1,9 @@
+--- 
+# cost matrix file
+costMatrix: ../../examples/data/freiburg_example/cost_matrix676_361.txt
+querySize: 676
+expansionRate: 0.7
+fanOut: 5
+nonMatchCost: 6.0
+# file name for the results (cost matrix overlayed with path(red/blue) and expanded nodes(green))
+costOutputName: overlayedCosts.png

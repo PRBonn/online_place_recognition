@@ -1,0 +1,2 @@
+../../examples/data/freiburg_example/query/OverFeat_features/imageCompressedCam0_0006013-feature.txt ../../examples/data/freiburg_example/reference/OverFeat_features/imageCompressedCam0_0018826-feature.txt
+../../examples/data/freiburg_example/query/OverFeat_features/imageCompressedCam0_0006049-feature.txt ../../examples/data/freiburg_example/reference/OverFeat_features/imageCompressedCam0_0020020-feature.txt
