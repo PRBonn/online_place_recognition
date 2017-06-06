@@ -56,7 +56,7 @@ An example of how to run the code please see [**RUN EXAMPLES**](examples/readme.
 In this mode, the program operates using **precomputed image descriptors**.
 To run the matching procedure you need to provide the feature files. An example of how to run the code can be found [feature based matching example](apps/feature_based_matching/readme.md). 
 
-For details on used feature descriptors please refer to [feature description](https://gitlab.ipb.uni-bonn.de/olga/online_place_recognition/blob/simple_online_graph/apps/feature_based_matching/readme.md#feature-format).
+For details on used feature descriptors please refer to [feature description](apps/feature_based_matching/readme.md#feature-format).
 
 **Note**: In this mode, individual features will be loaded and matched on demand. In order to be able to deal with dramatic visual changes, we typically operate with high-dimensional features and the matching procedure can take quite a long time--depending on the size and the complexity of the sequences.
 
