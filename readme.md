@@ -88,3 +88,7 @@ Please cite the related publication, if you use the code:
   doi       = {10.1109/LRA.2015.2512936}
 }
 ```
+
+## Troubleshooting
+
+In case the code is not working for you or you experience some code related problems, please open an issue [here](https://gitlab.com/ovysotska/online_place_recognition/issues).
