@@ -91,4 +91,4 @@ Please cite the related publication, if you use the code:
 
 ## Troubleshooting
 
-In case the code is not working for you or you experience some code related problems, please open an issue [here](https://gitlab.com/ovysotska/online_place_recognition/issues).
+In case the code is not working for you or you experience some code related problems, please consider openning an issue.
