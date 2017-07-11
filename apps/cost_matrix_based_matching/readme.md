@@ -20,6 +20,9 @@ First line in the `.txt` should specify number of `rows` and `cols` that the mat
 
 For more details, please check `database/cost_matrix_database.h`.
 
+**Warning** this code expects the costs to be __cosine distance__ costs, e.g. the higher values correspond to the better match.
+If your costs have different meaning, e.g. the lower the cost the better the match, then you need to either invert your costs before passing in to a program or derive from the class `CostMatrixDatabase` a class with your own implementation of `getCost` function.
+
 ## Expected output
 
 Upon finishing the code should provide the file `matched_path.txt` with image associations.
