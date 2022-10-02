@@ -1,5 +1,7 @@
 # Graph-based matching of image sequences
 
+This project is not maintained. Please consider a newer version [image_sequence_localizer](https://github.com/ovysotska/image_sequence_localizer).
+
 ## What does this code do?
 Given two sequences of images represented by the descriptors, the code constructs a data association graph and performs a search within this graph, so that for every query image, the code computes a matching hypothesis to an image in a database sequence as well as matching hypothesis for the previous images.
 
